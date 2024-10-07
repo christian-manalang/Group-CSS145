@@ -42,7 +42,7 @@ plt.pie(data, labels=data.index, autopct='%1.1f%%', startangle=40, colors=color,
 plt.title('Distribution of Laptop Types', fontsize=12, fontweight='bold')
 
 plt.axis('equal')
-plt.show()
+st.pyplot(plt)
 
 #Sunico 1
 fig, ax = plt.subplots(figsize=(10, 6))
