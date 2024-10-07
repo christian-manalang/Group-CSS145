@@ -177,8 +177,7 @@ plt.tight_layout()
 st.pyplot(plt)
 st.write("This bar chart shows the various distributions of laptop storage configurations and it clearly shows that the 256 SSD is the most prevalent among laptops followed by 1TB HDDs and 500 and 512 GB SSDs. This tells me that most of these laptops are willing to sacrifice storage size for increased read and write speeds. HDDs are also still prevalent as the graph shows HDD setups taking the 2nd and 3rd places. I also noticed many hybrid setups like the 128 GB SSD and the 1TB HDD that save costs by opting for a bigger 1TB HDD instead of a full SSD setup.")
 
-df['Storage_Type'] = df['Memory'].apply(get_storage_type)
-storage_type_counts = df['Storage_Type'].value_counts()
+
 
 #DELA CRUZ CHARLES 2
 
