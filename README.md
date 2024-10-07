@@ -14,7 +14,7 @@
 
 ## Kirk Adrian E. Sunico
 - **ID**: 2023107221
-- **GitHub**: [kirk928](https://github.com/kirk928)
+- **GitHub**: [kirk928](https://github.com/kirkadrian)
 
 <br>
 
