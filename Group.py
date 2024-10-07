@@ -24,6 +24,8 @@ plt.ylabel('Frequency')
 
 st.pyplot(plt)
 
+st.write("The histogram illustrates that the frequency of laptop prices **peaks within the €0-€1,000 range**. Notably, while the **highest price for laptops approaches €6,000**, its frequency remains among the lowest. This indicates that laptops priced around **€1,000 are the most commonly found in the dataset**.")
+
 #Manalang 2
 
 data = df['TypeName'].value_counts()
@@ -43,6 +45,19 @@ plt.title('Distribution of Laptop Types', fontsize=12, fontweight='bold')
 
 plt.axis('equal')
 st.pyplot(plt)
+
+st.write("The histogram illustrates that the frequency of laptop prices **peaks within the €0-€1,000 range**. Notably, while the **highest price for laptops approaches €6,000**, its frequency remains among the lowest. This indicates that laptops priced around **€1,000 are the most commonly found in the dataset**.")
+laptop_types = [
+    "1. Notebook at 55.5%.",
+    "2. Gaming at 16.1%.",
+    "3. Ultrabook at 15.2%.",
+    "4. 2 in 1 Convertible at 9.2%.",
+    "5. Workstation at 2.3%.",
+    "6. Netbook at 1.8%."
+]
+
+for laptop in laptop_types:
+    st.write(laptop)
 
 #Sunico 1
 fig, ax = plt.subplots(figsize=(10, 6))
