@@ -134,9 +134,9 @@ plt.xlabel('Type of Laptop', fontsize=16)
 plt.ylabel('Price (Euro)', fontsize=16)
 plt.xticks(rotation=45)
 
-st.write("Through this box plot, we can see that ultrabooks and workstations are at the higher end of the price bracket, with median prices around **1500€** and **2000€** respectively. Gaming laptops show the most price variability, at times even extending beyond **4000€**. On the other hand, netbooks and notebooks are more budget-friendly, with median prices around **500€** and **800€**. The 2-in-1 convertibles offer moderate prices, with a median of **1000€**, and they also show less variation compared to other categories. Overall, gaming laptops and workstations are the most expensive, while netbooks and notebooks are the budget options.")
-
 st.pyplot(plt)
+
+st.write("Through this box plot, we can see that ultrabooks and workstations are at the higher end of the price bracket, with median prices around **1500€** and **2000€** respectively. Gaming laptops show the most price variability, at times even extending beyond **4000€**. On the other hand, netbooks and notebooks are more budget-friendly, with median prices around **500€** and **800€**. The 2-in-1 convertibles offer moderate prices, with a median of **1000€**, and they also show less variation compared to other categories. Overall, gaming laptops and workstations are the most expensive, while netbooks and notebooks are the budget options.")
 
 #Liandro1
 
