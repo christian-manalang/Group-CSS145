@@ -75,6 +75,10 @@ plt.title('Distribution of GPU Companies', fontsize=16, fontweight='bold')
 
 st.pyplot(plt)
 
+st.write("In this pie chart, we see the different companies which govern over the different GPU models of the laptops. "
+         "All of the laptop GPUs are either owned by Intel, AMD, Nvidia, or even ARM, "
+         "which has had a history of being bought out by Nvidia but has failed in recent years.")
+
 #Gonzales 1
 
 average_prices = df.groupby('CPU_Company')['Price (Euro)'].mean().reset_index()
