@@ -9,8 +9,6 @@ st.header("Laptop Prices Dataset")
 
 df = pd.read_csv("laptop_price.csv")
 
-st.write("")
-
 #Manalang 1
 
 df.head(10)
@@ -61,8 +59,6 @@ laptop_types = [
 for laptop in laptop_types:
     st.write(laptop)
 
-st.write("")
-
 #Sunico 1
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.scatter(df['Inches'], df['Price (Euro)'], color='blue', alpha=0.6, edgecolor='white',s=65)
@@ -97,8 +93,6 @@ st.pyplot(plt)
 st.write("In this pie chart, we see the different companies which govern over the different GPU models of the laptops. "
          "All of the laptop GPUs are either owned by Intel, AMD, Nvidia, or even ARM, "
          "which has had a history of being bought out by Nvidia but has failed in recent years.")
-
-st.write("")
 
 #Gonzales 1
 
@@ -144,8 +138,6 @@ st.pyplot(plt)
 
 st.write("Through this box plot, we can see that ultrabooks and workstations are at the higher end of the price bracket, with median prices around **1500€** and **2000€** respectively. Gaming laptops show the most price variability, at times even extending beyond **4000€**. On the other hand, netbooks and notebooks are more budget-friendly, with median prices around **500€** and **800€**. The 2-in-1 convertibles offer moderate prices, with a median of **1000€**, and they also show less variation compared to other categories. Overall, gaming laptops and workstations are the most expensive, while netbooks and notebooks are the budget options.")
 
-st.write("")
-
 #Liandro1
 
 plt.figure(figsize=(10, 6))
@@ -169,4 +161,34 @@ st.pyplot(plt)
 
 st.write("This horizontal bar chart shows the counts of laptops by RAM size, clearly illustrating that most of the laptops distributed are **8GB RAM**, followed by **4GB**, and finally **16GB**. Laptops with higher capacities, on the other hand, are much rarer. This suggests that most of the laptops distributed are geared towards everyday performance that doesn't require high RAM capacity.")
 
-st.write("")
+#DELA CRUZ CHARLES 1
+storage_counts = df['Memory'].value_counts()
+
+plt.figure(figsize=(15, 8))
+sns.barplot(x=storage_counts.index, y=storage_counts.values)
+
+plt.title('Distribution of Laptop Storage Configurations', fontsize=16)
+plt.xlabel('Storage Configuration', fontsize=12)
+plt.ylabel('Count', fontsize=12)
+plt.xticks(rotation=45, ha='right')
+for i, count in enumerate(storage_counts.values):
+    plt.text(i, count, str(count), ha='center', va='bottom')
+plt.tight_layout()
+st.pyplot(plt)
+
+df['Storage_Type'] = df['Memory'].apply(get_storage_type)
+storage_type_counts = df['Storage_Type'].value_counts()
+
+#DELA CRUZ CHARLES 2
+
+avg_prices = df.groupby('Company')['Price (Euro)'].mean().sort_values(ascending=False)
+plt.figure(figsize=(12, 6))
+avg_prices.plot(kind='bar', color='skyblue')
+plt.title('Average Laptop Prices by Company', fontsize=16)
+plt.xlabel('Company', fontsize=12)
+plt.ylabel('Average Price (Euro)', fontsize=12)
+plt.xticks(rotation=45, ha='right')
+for i, price in enumerate(avg_prices):
+    plt.text(i, price, f'€{price:,.0f}', ha='center', va='bottom')
+plt.tight_layout()
+st.pyplot(plt)
