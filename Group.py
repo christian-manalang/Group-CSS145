@@ -9,6 +9,8 @@ st.header("Laptop Prices Dataset")
 
 df = pd.read_csv("laptop_price.csv")
 
+st.write("")
+
 #Manalang 1
 
 df.head(10)
@@ -59,6 +61,8 @@ laptop_types = [
 for laptop in laptop_types:
     st.write(laptop)
 
+st.write("")
+
 #Sunico 1
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.scatter(df['Inches'], df['Price (Euro)'], color='blue', alpha=0.6, edgecolor='white',s=65)
@@ -93,6 +97,8 @@ st.pyplot(plt)
 st.write("In this pie chart, we see the different companies which govern over the different GPU models of the laptops. "
          "All of the laptop GPUs are either owned by Intel, AMD, Nvidia, or even ARM, "
          "which has had a history of being bought out by Nvidia but has failed in recent years.")
+
+st.write("")
 
 #Gonzales 1
 
@@ -138,6 +144,8 @@ st.pyplot(plt)
 
 st.write("Through this box plot, we can see that ultrabooks and workstations are at the higher end of the price bracket, with median prices around **1500€** and **2000€** respectively. Gaming laptops show the most price variability, at times even extending beyond **4000€**. On the other hand, netbooks and notebooks are more budget-friendly, with median prices around **500€** and **800€**. The 2-in-1 convertibles offer moderate prices, with a median of **1000€**, and they also show less variation compared to other categories. Overall, gaming laptops and workstations are the most expensive, while netbooks and notebooks are the budget options.")
 
+st.write("")
+
 #Liandro1
 
 plt.figure(figsize=(10, 6))
@@ -160,3 +168,5 @@ plt.ylabel('RAM (GB)')
 st.pyplot(plt)
 
 st.write("This horizontal bar chart shows the counts of laptops by RAM size, clearly illustrating that most of the laptops distributed are **8GB RAM**, followed by **4GB**, and finally **16GB**. Laptops with higher capacities, on the other hand, are much rarer. This suggests that most of the laptops distributed are geared towards everyday performance that doesn't require high RAM capacity.")
+
+st.write("")
