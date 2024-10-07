@@ -54,6 +54,11 @@ ax.grid(color='gray', linestyle='--', linewidth=0.5, alpha=0.9)
 ax.set_aspect(aspect='auto')
 st.pyplot(plt)
 
+st.write("This scatterplot shows the relationship between the inches of the laptop's screen and its price. "
+         "Based on my observation, it seems that the larger a laptop's screen is, the more expensive it becomes. "
+         "In this case, we can see how 10-inch laptops range below the 1000 euro mark, "
+         "but 16.5-17 inch laptops can range from below 1000 to at most 6000 euros max.")
+
 #Sunico 2
 company_counts = df['GPU_Company'].value_counts()
 
