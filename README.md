@@ -1,14 +1,32 @@
-GROUP MEMBERS
+# Group Members
 
-#Dominic Ryan C. Gonzales - 2023180061 - ryang1006
+## Dominic Ryan C. Gonzales
+- **ID**: 2023180061
+- **GitHub**: [ryang1006](https://github.com/ryang1006)
+
 <br>
-#Jorge Christian B. Manalang - 2023104718 - christian-manalang
+
+## Jorge Christian B. Manalang
+- **ID**: 2023104718
+- **GitHub**: [christian-manalang](https://github.com/christian-manalang)
+
 <br>
-#Kirk Adrian E. Sunico - 2023107221 - kirk928
+
+## Kirk Adrian E. Sunico
+- **ID**: 2023107221
+- **GitHub**: [kirk928](https://github.com/kirk928)
+
 <br>
-#Charles Matthew L. Dela Cruz - 2023104218 - charles-delacruz
+
+## Charles Matthew L. Dela Cruz
+- **ID**: 2023104218
+- **GitHub**: [charles-delacruz](https://github.com/charles-delacruz)
+
 <br>
-#Liandro E. Refulle - 2023109170 - liandrorefulle
+
+## Liandro E. Refulle
+- **ID**: 2023109170
+- **GitHub**: [liandrorefulle](https://github.com/liandrorefulle)
 
 # Insights from our Data Visualization and Data Analysis
 
