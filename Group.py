@@ -55,7 +55,6 @@ ax.set_aspect(aspect='auto')
 st.pyplot(plt)
 
 #Sunico 2
-df = pd.read_csv('laptop_price.csv')
 company_counts = df['GPU_Company'].value_counts()
 
 labels = company_counts.index
