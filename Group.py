@@ -176,8 +176,6 @@ for i, count in enumerate(storage_counts.values):
 plt.tight_layout()
 st.pyplot(plt)
 
-df['Storage_Type'] = df['Memory'].apply(get_storage_type)
-storage_type_counts = df['Storage_Type'].value_counts()
 
 #DELA CRUZ CHARLES 2
 
