@@ -119,7 +119,7 @@ plt.title('Count of Laptops by Company')
 plt.xlabel('Company')
 plt.ylabel('NUmber of Laptops')
 plt.xticks(rotation=45)
-plt.show()
+st.pyplot(plt)
 
 #Liandro2
 
@@ -128,4 +128,4 @@ df['RAM (GB)'].value_counts().sort_index().plot(kind='barh', color='lightgreen')
 plt.title('Count of Laptops by RAM Size')
 plt.xlabel('Number of Laptops')
 plt.ylabel('RAM (GB)')
-plt.show()
+st.pyplot(plt)
