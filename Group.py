@@ -70,3 +70,44 @@ plt.axis('equal')
 plt.title('Distribution of GPU Companies', fontsize=16, fontweight='bold')
 
 st.pyplot(plt)
+
+#Gonzales 1
+
+average_prices = df.groupby('CPU_Company')['Price (Euro)'].mean().reset_index()
+
+sns.set(style='whitegrid')
+
+plt.figure(figsize=(16, 8))
+
+cool_colors = {
+    'AMD': 'red',
+    'Intel': 'blue',
+    'Samsung': 'purple'
+}
+
+colors = [cool_colors.get(company, 'lightgray') for company in average_prices['CPU_Company']]
+bar_plot = sns.barplot(data=average_prices, x='Price (Euro)', y='CPU_Company', palette=colors)
+
+plt.title('Average Laptop Prices by CPU Company', fontsize=20)
+plt.xlabel('Average Price (Euro)', fontsize=16)
+plt.ylabel('CPU Company', fontsize=16)
+
+bar_plot.tick_params(axis='y', labelsize=12)
+bar_plot.tick_params(axis='x', labelsize=12)
+
+for index, value in enumerate(average_prices['Price (Euro)']):
+    plt.text(value, index, f'€{value:.2f}', va='center', fontsize=12)
+
+plt.show()
+
+#Gonzales 2
+
+plt.figure(figsize=(14, 8))
+sns.boxplot(data=df, x='TypeName', y='Price (Euro)', palette='Set2')
+plt.title('Price Distribution by Laptop Type', fontsize=20)
+plt.xlabel('Type of Laptop', fontsize=16)
+plt.ylabel('Price (Euro)', fontsize=16)
+plt.xticks(rotation=45)
+
+
+plt.show()
