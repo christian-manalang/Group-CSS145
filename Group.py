@@ -174,6 +174,8 @@ plt.xticks(rotation=45, ha='right')
 for i, count in enumerate(storage_counts.values):
     plt.text(i, count, str(count), ha='center', va='bottom')
 plt.tight_layout()
+
+st.write("This bar chart shows the various distributions of laptop storage configurations and it clearly shows that the 256 SSD is the most prevalent among laptops followed by 1TB HDDs and 500 and 512 GB SSDs. This tells me that most of these laptops are willing to sacrifice storage size for increased read and write speeds. HDDs are also still prevalent as the graph shows HDD setups taking the 2nd and 3rd places. I also noticed many hybrid setups like the 128 GB SSD and the 1TB HDD that save costs by opting for a bigger 1TB HDD instead of a full SSD setup.")
 st.pyplot(plt)
 
 df['Storage_Type'] = df['Memory'].apply(get_storage_type)
@@ -191,4 +193,5 @@ plt.xticks(rotation=45, ha='right')
 for i, price in enumerate(avg_prices):
     plt.text(i, price, f'€{price:,.0f}', ha='center', va='bottom')
 plt.tight_layout()
+st.write("This bar chart shows the average price each company on the dataset is charging for their laptops. Notably, Razer on average charged the highest at 3,346 Euro indicating that almost all of the Razer laptops in this dataset are high-spec and high-end laptops. Following Razer are LG, MSI, Google, Micosoft and Apple well known for their premium laptops. Huawei, Samsung, Toshiba, Dell, and Xiaomi have average laptop prices that can be considered mid-range. Asus, Lenovo, HP, Fujutsu, Acer, and the other brands are more budget oriented with average laptop prices at 1200 Eur and lowe")
 st.pyplot(plt)
