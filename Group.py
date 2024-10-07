@@ -97,7 +97,7 @@ bar_plot.tick_params(axis='x', labelsize=12)
 for index, value in enumerate(average_prices['Price (Euro)']):
     plt.text(value, index, f'€{value:.2f}', va='center', fontsize=12)
 
-plt.show()
+st.pyplot(plt)
 
 #Gonzales 2
 
@@ -109,7 +109,7 @@ plt.ylabel('Price (Euro)', fontsize=16)
 plt.xticks(rotation=45)
 
 
-plt.show()
+st.pyplot(plt)
 
 #Liandro1
 
