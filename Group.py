@@ -52,7 +52,7 @@ ax.set_ylabel('Price in Euros')
 ax.set_title('Inches vs Price (Euro)', fontweight='bold')
 ax.grid(color='gray', linestyle='--', linewidth=0.5, alpha=0.9)
 ax.set_aspect(aspect='auto')
-plt.show()
+st.pyplot(plt)
 
 #Sunico 2
 df = pd.read_csv('/laptop_price.csv')
@@ -69,4 +69,4 @@ plt.pie(sizes, labels=labels, autopct='%0.2f%%', startangle=45, colors=colors, e
 plt.axis('equal')
 plt.title('Distribution of GPU Companies', fontsize=16, fontweight='bold')
 
-plt.show()
+st.pyplot(plt)
