@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 st.title("GROUP 4")
 st.header("Laptop Prices Dataset")
 
-df = pd.read_csv("dataset/laptop_price.csv")
+df = pd.read_csv("laptop_price.csv")
 
 #Manalang 1
 
@@ -55,7 +55,6 @@ ax.set_aspect(aspect='auto')
 st.pyplot(plt)
 
 #Sunico 2
-df = pd.read_csv('/laptop_price.csv')
 company_counts = df['GPU_Company'].value_counts()
 
 labels = company_counts.index
