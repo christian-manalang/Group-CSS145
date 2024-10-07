@@ -123,6 +123,8 @@ for index, value in enumerate(average_prices['Price (Euro)']):
 
 st.pyplot(plt)
 
+st.write("The bar graph shows the average price of laptops by CPU brand. Intel laptops are the most expensive at **1163.73€** on average. Samsung laptops are the second most expensive at **659€**, while AMD laptops are the cheapest at **560.99€**.")
+
 #Gonzales 2
 
 plt.figure(figsize=(14, 8))
@@ -132,6 +134,7 @@ plt.xlabel('Type of Laptop', fontsize=16)
 plt.ylabel('Price (Euro)', fontsize=16)
 plt.xticks(rotation=45)
 
+st.write("Through this box plot, we can see that ultrabooks and workstations are at the higher end of the price bracket, with median prices around **1500€** and **2000€** respectively. Gaming laptops show the most price variability, at times even extending beyond **4000€**. On the other hand, netbooks and notebooks are more budget-friendly, with median prices around **500€** and **800€**. The 2-in-1 convertibles offer moderate prices, with a median of **1000€**, and they also show less variation compared to other categories. Overall, gaming laptops and workstations are the most expensive, while netbooks and notebooks are the budget options.")
 
 st.pyplot(plt)
 
@@ -145,6 +148,8 @@ plt.ylabel('NUmber of Laptops')
 plt.xticks(rotation=45)
 st.pyplot(plt)
 
+st.write("This bar chart displays the distribution of laptops by company, highlighting that **Dell**, **Lenovo**, and **HP** are the leading brands in the dataset, each contributing a significant number of laptops. **Asus** and **Acer** also have a notable presence, though smaller in comparison to the top three. Other brands like **Apple**, **MSI**, and **Toshiba** contribute fewer models, indicating a more focused product range or niche market targeting. The distribution suggests that Dell, Lenovo, and HP dominate the market with diverse offerings, while other brands cater to specific segments or premium categories.")
+
 #Liandro2
 
 plt.figure(figsize=(10, 6))
@@ -153,3 +158,5 @@ plt.title('Count of Laptops by RAM Size')
 plt.xlabel('Number of Laptops')
 plt.ylabel('RAM (GB)')
 st.pyplot(plt)
+
+st.write("This horizontal bar chart shows the counts of laptops by RAM size, clearly illustrating that most of the laptops distributed are **8GB RAM**, followed by **4GB**, and finally **16GB**. Laptops with higher capacities, on the other hand, are much rarer. This suggests that most of the laptops distributed are geared towards everyday performance that doesn't require high RAM capacity.")
